@@ -1,0 +1,42 @@
+{
+  "generated_paths": [
+    "CHANGELOG.md",
+    "CITATION.cff",
+    "CONTRIBUTING.md",
+    "LICENSES/CC-BY-4.0.txt",
+    "README.md",
+    "formalization/nodes.json",
+    "manuscript/mertens-grid-cylinder-v3/README.md",
+    "manuscript/mertens-grid-cylinder-v3/SHA256SUMS",
+    "manuscript/mertens-grid-cylinder-v3/coverage.json",
+    "manuscript/mertens-grid-cylinder-v3/metadata.json",
+    "manuscript/mertens-grid-cylinder-v3/note.pdf",
+    "manuscript/mertens-grid-cylinder-v3/note.tex",
+    "manuscript/mertens-grid-cylinder-v3/verification.json",
+    "manuscript/mertens-grid-cylinder-v3/verify.py",
+    "paper.json",
+    "paper.pdf",
+    "source.archive"
+  ],
+  "generator_version": "0.1.0",
+  "sha256": {
+    "CHANGELOG.md": "3d2ef959a1d23582c9961651a88150feaa4dd29e8f854883567db61e44abbac1",
+    "CITATION.cff": "80bf47b4cd7a0ce272eb60981f62eefe5d10d42679585ebd77bdc40c7ce42e27",
+    "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
+    "LICENSES/CC-BY-4.0.txt": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
+    "README.md": "7c6da36ef428ae6c4ff8662b5ca0e6f83557bf895b4fd6debe579ac2cb8c3f86",
+    "formalization/nodes.json": "e920c5e848a73c37c39b24005f036cfab6a3be5f2df639f64a774b04d46dd95f",
+    "manuscript/mertens-grid-cylinder-v3/README.md": "ca23fd981047ac2bae79df5f0bf05af6a336a074e08024bfade706c429925b63",
+    "manuscript/mertens-grid-cylinder-v3/SHA256SUMS": "f3f91ce7dd0cc412e6bbc5400704f0faf00c4a49cfdd1bb16c9f39b69c0ba738",
+    "manuscript/mertens-grid-cylinder-v3/coverage.json": "aeb1e901257827bb92365b35afbf82b0eb31dac984cc42810a362b3f0bb82958",
+    "manuscript/mertens-grid-cylinder-v3/metadata.json": "8ff979a623ba0a2a0c65466f6bebc6044d834ad747052e457adcac4fcbf077c6",
+    "manuscript/mertens-grid-cylinder-v3/note.pdf": "f70177131a3b0228ebc7012fafd24501506461cfc62bea1f9a16b05a5f8b16aa",
+    "manuscript/mertens-grid-cylinder-v3/note.tex": "32bdfb86bcaeaf4f523639f535c6dccc4969e7e5595d0824945de952126f59bf",
+    "manuscript/mertens-grid-cylinder-v3/verification.json": "be958d85fa30a0706d09ca1953d9e6f22cf4250047ae52e17b3fdba277c32956",
+    "manuscript/mertens-grid-cylinder-v3/verify.py": "4f9ef3d49571ee0170decdb937d6ed95a129345f7fead434c07f94e5f0181b7d",
+    "paper.json": "516f55a31c0d1f8bac192554a9d83fb7adbf6417a0fbe9dce2ed63662ed6b6ed",
+    "paper.pdf": "f70177131a3b0228ebc7012fafd24501506461cfc62bea1f9a16b05a5f8b16aa",
+    "source.archive": "2e4c03c27770461dddd27b5c4b44951b3bd5d7b8c0f6409d568591d3195639da"
+  },
+  "snapshot_identity": "2ca1888f659d711d23aeddd5b1c035aec902a60b8c93808d454c9acfc7e74977"
+}

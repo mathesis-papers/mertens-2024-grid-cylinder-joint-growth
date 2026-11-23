@@ -1,9 +1,30 @@
-# Mathesis paper template
+# Boundary bounds for Mertens's grid–cylinder conjecture: an alternative proof and extensions
 
-One repository for one exact Mathesis paper version. This template has no selected paper and no example books.
+**Authors:** Haobo Ma, Wenlin Zhang
 
-Authors can start from the [Mathesis LaTeX manuscript template](docs/layer-mathesis/MANUSCRIPT.md) for papers and short notes. Our own short notes use it as their default reference; sections and length follow the mathematical argument.
+We give a finite-boundary alternative proof of Mertens's grid–cylinder growth equality (2024, Section 5, page 19, after equation (22)), which already follows from Gangloff and Talon's grid results (2019/2020). The per-vertex counts have the same unrestricted joint limit as both side lengths tend to infinity. An injective boundary repair gives g(m,n) <= c(m,n) <= 4^n g(m,n). Block arguments yield explicit rectangle and strip bounds, and the comparison extends to every positive activity and to king graphs with periodic boundaries.
 
-The upstream books template supplies the machinery; the Mathesis layer supplies the publisher adapter and the [enforced four-zone layout](docs/layer-mathesis/LAYOUT.md).
+- PDF: [frozen public file](paper.pdf)
+- License: CC-BY-4.0
+- Version: 3
+- Mathesis record: [mertens-2024-grid-cylinder-joint-growth](https://mathesis-omega-research.apps.chrono-ai.fun/papers/mertens-2024-grid-cylinder-joint-growth?version=3)
 
-Use [the publisher pipeline](docs/layer-mathesis/PIPELINE.md) to import a public projection with `paper.py fill`. It creates the paper record, one bilingual content skeleton and a generated paper README. Upgrade with `tbook template update`; keep preparation run records outside the repository.
+## How to cite
+
+Haobo Ma, Wenlin Zhang (2026). Boundary bounds for Mertens's grid–cylinder conjecture: an alternative proof and extensions. Mathesis, version 3. https://mathesis-omega-research.apps.chrono-ai.fun/papers/mertens-2024-grid-cylinder-joint-growth?version=3
+
+## Statement progress
+
+| Statement | Formalization status | Source | Verification basis |
+|---|---|---|---|
+| Theorem (s1) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean) | No public receipt |
+| Lemma (s2) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean) | No public receipt |
+| Lemma (s3) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean) | No public receipt |
+| Corollary (s4) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean) | No public receipt |
+| Corollary (s5) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean) | No public receipt |
+| Corollary (s6) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean) | No public receipt |
+| Corollary (s7) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean) | No public receipt |
+
+## Contributions
+
+Original authors are listed above. Formalization contributors and attribution are retained in `formalization/nodes.json`; repository pull requests do not confer verification or credit. Submit formalization attempts through the Mathesis attempt path described in [CONTRIBUTING.md](CONTRIBUTING.md).

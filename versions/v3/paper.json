@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 77174,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "f70177131a3b0228ebc7012fafd24501506461cfc62bea1f9a16b05a5f8b16aa",
+      "sha256": "f70177131a3b0228ebc7012fafd24501506461cfc62bea1f9a16b05a5f8b16aa"
+    },
+    "source": {
+      "bytes": 92173,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "2e4c03c27770461dddd27b5c4b44951b3bd5d7b8c0f6409d568591d3195639da",
+      "sha256": "2e4c03c27770461dddd27b5c4b44951b3bd5d7b8c0f6409d568591d3195639da"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "We give a finite-boundary alternative proof of Mertens's grid–cylinder growth equality (2024, Section 5, page 19, after equation (22)), which already follows from Gangloff and Talon's grid results (2019/2020). The per-vertex counts have the same unrestricted joint limit as both side lengths tend to infinity. An injective boundary repair gives g(m,n) <= c(m,n) <= 4^n g(m,n). Block arguments yield explicit rectangle and strip bounds, and the comparison extends to every positive activity and to king graphs with periodic boundaries.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 3,
+    "doi": null,
+    "lean_source": {
+      "revision": "e277c80d045570daf43bd03b4e313f7ce457b4e2",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 77174,
+      "sha256": "f70177131a3b0228ebc7012fafd24501506461cfc62bea1f9a16b05a5f8b16aa",
+      "url": "/api/v1/collected-papers/mertens-2024-grid-cylinder-joint-growth/files/pdf?version=3"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-23T01:42:22.714777139Z",
+    "record": "mertens-2024-grid-cylinder-joint-growth",
+    "repository_name": "mertens-2024-grid-cylinder-joint-growth",
+    "source": {
+      "bytes": 92173,
+      "sha256": "2e4c03c27770461dddd27b5c4b44951b3bd5d7b8c0f6409d568591d3195639da",
+      "url": "/api/v1/collected-papers/mertens-2024-grid-cylinder-joint-growth/files/source?version=3"
+    },
+    "title": "Boundary bounds for Mertens's grid–cylinder conjecture: an alternative proof and extensions",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-23T01:42:22.714777139Z",
+        "revision": "3",
+        "version": 3
+      }
+    ],
+    "work": "mertens-2024-grid-cylinder-joint-growth"
+  }
+}

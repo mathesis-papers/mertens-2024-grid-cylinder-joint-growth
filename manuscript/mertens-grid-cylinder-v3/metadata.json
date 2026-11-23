@@ -1,0 +1,23 @@
+{
+  "id": "mertens-2024-grid-cylinder-joint-growth",
+  "revision": 3,
+  "problem_ids": [
+    "mertens-2024-grid-cylinder-joint-growth"
+  ],
+  "topic": "Mertens (2024), Section 5, page 19, after equation (22): grid–cylinder domination growth equality",
+  "title": "Boundary bounds for Mertens's grid–cylinder conjecture: an alternative proof and extensions",
+  "creators": [
+    {
+      "name": "Ma, Haobo",
+      "affiliation": "ChronoAI Pte Ltd, Singapore"
+    },
+    {
+      "name": "Zhang, Wenlin",
+      "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"
+    }
+  ],
+  "abstract": "We give a finite-boundary alternative proof of Mertens's grid–cylinder growth equality (2024, Section 5, page 19, after equation (22)), which already follows from Gangloff and Talon's grid results (2019/2020). The per-vertex counts have the same unrestricted joint limit as both side lengths tend to infinity. An injective boundary repair gives g(m,n) <= c(m,n) <= 4^n g(m,n). Block arguments yield explicit rectangle and strip bounds, and the comparison extends to every positive activity and to king graphs with periodic boundaries.",
+  "summary": "An explicit same-size seam inequality and complete proofs of rectangle enclosures, strip estimates and positive-activity boundary independence, with earlier grid and torus results credited.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean"
+}

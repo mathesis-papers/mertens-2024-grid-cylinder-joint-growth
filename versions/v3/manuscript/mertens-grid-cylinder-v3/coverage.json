@@ -1,0 +1,52 @@
+{
+  "note_id": "mertens-2024-grid-cylinder-joint-growth",
+  "revision": 3,
+  "source_url": "https://cs.uwaterloo.ca/journals/JIS/VOL27/Mertens2/mertens12.pdf",
+  "prior_work": [
+    {
+      "authors": "Silvère Gangloff; Alexandre Talon",
+      "first_release": "2019-06-25",
+      "journal_year": 2020,
+      "url": "https://doi.org/10.1016/j.tcs.2020.03.006",
+      "scope": "Joint rectangular grid growth, Theorem 1; selected-frame comparison, Lemma 4. Periodic repetition plus that comparison implies grid–cylinder–torus equality."
+    },
+    {
+      "authors": "Alexandre Talon",
+      "first_release": "2020-02-26",
+      "url": "https://arxiv.org/abs/2002.11615",
+      "scope": "Thesis Lemmas 3.6–3.7 and Theorem 3.11 explicitly treat the unrestricted rectangular limit and selected frame."
+    },
+    {
+      "authors": "Stephan Mertens",
+      "first_release": "2024-08-15",
+      "journal_release": "2024-09-27",
+      "url": "https://cs.uwaterloo.ca/journals/JIS/VOL27/Mertens2/mertens12.pdf",
+      "scope": "Equations (15)–(17) state grid and strip existence; page 19 states torus–cylinder equality and conjectures grid–cylinder equality."
+    }
+  ],
+  "coverage": {
+    "lean_declarations": {
+      "D5.S3.Combinatorics.Graph.Domination.MertensGridGrowth.finite_seam_bound": "Ordinary grid/cylinder count comparison for m >= 3, including every positive n.",
+      "D5.S3.Combinatorics.Graph.Domination.MertensGridGrowth.tiling_count": "Independent rectangular block lower bound; the note uses positive block dimensions.",
+      "D5.S3.Combinatorics.Graph.Domination.MertensGridGrowth.result": "Existence of mu in [1,2] and a common threshold for both dimensions giving both per-vertex rates within epsilon of mu."
+    },
+    "lean_count_definition_url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/DominatingSetAverage.lean",
+    "written_proofs": [
+      "Selected-frame consequence of earlier grid results",
+      "Same-size boundary repair and joint limit",
+      "Finite-rectangle entropy enclosure",
+      "Torus comparison",
+      "Strip limits and O(1/m) error",
+      "Positive-activity partition functions",
+      "Free and periodic king graphs"
+    ],
+    "finite_checks": "Exact subset enumeration up to 16 vertices, repair injections and polynomial inequalities at rational activities 1/2, 1, 2.",
+    "not_covered": [
+      "Certified values of the growth constants in (21)–(23)",
+      "King-graph ten-digit conjecture after (24)",
+      "Ratio convergence and expansion in (18)–(20)",
+      "General exact polynomials and minimum dominating-set counts",
+      "OEIS empirical fixed-width recurrences"
+    ]
+  }
+}

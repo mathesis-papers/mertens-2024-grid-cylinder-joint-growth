@@ -1,0 +1,367 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=27mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[colorlinks=true,allcolors=blue,breaklinks=true]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\ds}{\operatorname{d}}
+\title{Boundary bounds for Mertens's grid--cylinder conjecture:\\an alternative proof and extensions}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\\small ChronoAI Pte Ltd, Singapore}
+\date{12 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We give a finite-boundary alternative proof of Mertens's grid--cylinder
+growth equality (2024, Section 5, page 19, after equation (22)), which
+already follows from Gangloff and Talon's grid results (2019/2020).
+The per-vertex counts have the same unrestricted joint limit as both side
+lengths tend to infinity. An injective boundary repair gives the finite
+comparison $g_{m,n}\le c_{m,n}\le4^n g_{m,n}$.
+A block argument proves existence of the grid limit and gives an explicit
+finite-rectangle error bound. The same boundary comparison also yields
+the common torus limit. Further corollaries give strip error bounds and
+extend the comparison to domination polynomials at every positive activity,
+including the king graph.
+\end{abstract}
+
+\section{The question and its scope}
+Mertens \cite[Section 5, p.~19, after (22)]{mertens} conjectures that
+the grid and cylinder growth constants agree: ``these two growth rates
+are in fact equal.'' We give a finite comparison uniformly over rectangles
+of arbitrarily varying aspect ratio. The equality is already a consequence
+of Gangloff and Talon \cite[Lemma 4 and Theorem 1]{gangloff}, as explained
+below; our focus is an explicit same-size estimate and its extensions.
+
+A set $S$ of vertices of a finite simple graph dominates the graph if
+each vertex is in $S$ or has a neighbor in $S$. Write $\ds(H)$ for the
+number of all dominating subsets of $H$, counting labelled subsets
+without quotienting by symmetries. Let $P_m$ be the path on
+$\{0,\ldots,m-1\}$, and let $C_m$, for $m\ge3$, be the cycle obtained
+by adding the edge between its endpoints. On the common vertex set
+$\{0,\ldots,m-1\}\times\{0,\ldots,n-1\}$ put
+\[
+ g_{m,n}=\ds(P_m\mathbin\square P_n),\qquad
+ c_{m,n}=\ds(C_m\mathbin\square P_n).
+\]
+Here $\square$ denotes the Cartesian product: an edge changes exactly one
+coordinate along an edge of its factor. All grid dimensions are positive;
+the cylinder requires $m\ge3$. Natural logarithms are used throughout.
+
+For clarity, let $N_{m,n}$ count restrictions to an $m\times n$ rectangle
+of dominating configurations on the infinite square grid. Periodically
+repeating a torus dominating set makes such a configuration. Conversely,
+surrounding a restriction by a fully selected frame dominates the enlarged
+rectangle and retains the restriction. Thus, for $m,n\ge3$,
+\[
+ g_{m,n}\le c_{m,n}\le t_{m,n}\le N_{m,n}\le g_{m+2,n+2},
+ \qquad t_{m,n}=\ds(C_m\square C_n).
+\]
+The final inequality is the selected-frame construction of
+\cite[Lemma 4, p.~91]{gangloff}; its Theorem 1 gives the joint grid
+limit. Since $(m+2)(n+2)/(mn)\to1$, the same common limit follows for
+cylinders and tori. This is a consequence of that earlier work, rather
+than an explicit grid--cylinder statement there. The grid limit is also
+stated by Mertens in (15)--(17), and the torus--cylinder equality is his
+conclusion on p.~19. Talon \cite[Lemmas 3.6--3.7, pp.~62--63]{talon}
+also explicitly treats dimensions tending to infinity at different speeds.
+The next proof gives a same-size bound without the added frame.
+
+\begin{theorem}\label{thm:main}
+There is a number $\mu\in[1,2]$ such that
+\[
+ \lim_{m,n\to\infty}g_{m,n}^{1/(mn)}
+ =\lim_{m,n\to\infty}c_{m,n}^{1/(mn)}=\mu.
+\]
+These are unrestricted joint limits: for every $\varepsilon>0$ there is
+$N\ge3$ such that both expressions differ from $\mu$ by less than
+$\varepsilon$ whenever $m,n\ge N$. Moreover,
+\begin{equation}\label{eq:seam}
+ g_{m,n}\le c_{m,n}\le4^n g_{m,n}
+ \qquad(m\ge3,\ n\ge1).
+\end{equation}
+\end{theorem}
+
+\section{Two injections}
+Adding edges preserves every dominating set, so $\ds(G)\le\ds(H)$
+whenever $G\subseteq H$ have the same vertex set. The reverse comparison
+can be bounded by the vertices incident to the extra edges.
+
+\begin{lemma}[Boundary repair]\label{lem:repair}
+Let $G,H$ be graphs on the same finite vertex set $V$. Suppose $B\subseteq V$
+has the property that every $H$-edge incident to a vertex outside $B$
+is a $G$-edge. Then
+\[
+ \ds(H)\le 2^{|B|}\ds(G).
+\]
+\end{lemma}
+\begin{proof}
+If $S$ dominates $H$, then $S\cup B$ dominates $G$. Vertices in $B$
+are selected, and a vertex outside $B$ retains any neighbor that
+dominated it. The map
+\[
+ S\longmapsto (S\cup B,\ S\cap B)
+\]
+takes values in the dominating sets of $G$ times the subsets of $B$.
+It is injective: the first coordinate determines $S\setminus B$, and
+the second determines $S\cap B$. Counting these pairs proves the bound.
+\end{proof}
+
+For the cylinder and grid, take $B$ to be the two endpoint columns,
+of size $2n$. Outside these columns the graphs have identical neighbors.
+Edge inclusion and Lemma~\ref{lem:repair} give \eqref{eq:seam}, including
+$m=3$ and $n=1$.
+
+\begin{lemma}[Block injection]\label{lem:block}
+For all positive integers $a,b,M,N$,
+\begin{equation}\label{eq:block}
+ g_{M,N}\ge g_{a,b}^{\lfloor M/a\rfloor\lfloor N/b\rfloor}.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Place $q=\lfloor M/a\rfloor$ by $p=\lfloor N/b\rfloor$ disjoint
+$a\times b$ rectangular blocks in the larger grid. Choose a dominating
+set in each block independently and select every vertex outside the
+blocks. Each block vertex is dominated inside its block, and every
+remaining vertex is selected. The choices can be recovered by restricting
+to each block, so the construction is injective. Edges between blocks
+cannot destroy domination. The construction also applies when $q$ or
+$p$ is zero, yielding the full vertex set.
+\end{proof}
+
+\section{The joint limit and a finite-size estimate}
+Define
+\[
+ f_{m,n}=\frac{\log g_{m,n}}{mn},\qquad
+ h=\sup_{a,b\ge1}f_{a,b}.
+\]
+The full vertex set dominates, and there are $2^{mn}$ subsets altogether.
+Thus $0\le f_{m,n}\le\log2$ and $0\le h\le\log2$.
+For fixed $a,b$, Lemma~\ref{lem:block} gives
+\[
+ f_{M,N}\ge
+ \frac{a\lfloor M/a\rfloor}{M}
+ \frac{b\lfloor N/b\rfloor}{N}f_{a,b}.
+\]
+Both fractions tend to one as $M,N$ tend jointly to infinity. Consequently
+$\liminf f_{M,N}\ge f_{a,b}$ for every $a,b$, hence
+$\liminf f_{M,N}\ge h$. Since $f_{M,N}\le h$, the joint limit is $h$.
+Equivalently, one can first choose a block with rate within a prescribed
+error of $h$ and then choose both larger dimensions so that its covered
+area fraction is sufficiently close to one; this gives a single common
+threshold on the two dimensions.
+
+Taking logarithms of \eqref{eq:seam} yields
+\begin{equation}\label{eq:rate}
+ 0\le\frac{\log c_{m,n}}{mn}-f_{m,n}
+ \le\frac{2\log2}{m}.
+\end{equation}
+The right side tends to zero at every joint approach to infinity.
+Exponentiation proves Theorem~\ref{thm:main}, with $\mu=e^h$.
+
+\begin{corollary}\label{cor:error}
+Every positive rectangle gives the rigorous enclosure
+\begin{equation}\label{eq:error}
+ 0\le h-f_{a,b}\le2\log2\left(\frac1a+\frac1b\right).
+\end{equation}
+\end{corollary}
+\begin{proof}
+Partition the $qa\times pb$ grid into $qp$ blocks of size $a\times b$,
+and delete all edges between blocks to obtain a disjoint union $G$.
+Its count is $g_{a,b}^{qp}$. Let $B$ consist of both columns adjoining
+each vertical cut and both rows adjoining each horizontal cut. Repeated
+rows or columns are counted only once, so
+\[
+ |B|\le 2(q-1)pb+2(p-1)qa.
+\]
+Every deleted edge has both endpoints in $B$. Boundary repair gives
+\[
+ f_{qa,pb}\le f_{a,b}
+ +2\log2\left(\frac{q-1}{qa}+\frac{p-1}{pb}\right).
+\]
+Let $q,p$ tend to infinity and use the joint grid limit. The other
+inequality follows from the definition of $h$.
+\end{proof}
+
+\begin{corollary}\label{cor:torus}
+For $m,n\ge3$, put $t_{m,n}=\ds(C_m\mathbin\square C_n)$. Then
+\[
+ g_{m,n}\le c_{m,n}\le t_{m,n}\le4^m c_{m,n}
+ \le4^{m+n}g_{m,n},\qquad
+ \lim_{m,n\to\infty}t_{m,n}^{1/(mn)}=\mu.
+\]
+\end{corollary}
+\begin{proof}
+The first two inequalities follow by adding edges. For the next one,
+apply boundary repair to the torus and cylinder with $B$ the two
+endpoint rows, of size $2m$. The logarithmic difference between torus
+and grid is at most $2\log2(1/m+1/n)$, which tends to zero jointly.
+\end{proof}
+
+\begin{corollary}\label{cor:strip}
+For each fixed $m\ge1$, the limit
+$h_m=\lim_{n\to\infty}\log g_{m,n}/(mn)$ exists and
+\[
+ 0\le h-h_m\le \frac{2\log2}{m}.
+\]
+For $m\ge3$ the cylinder strip limit $\bar h_m$ exists, the torus
+has the same strip limit, and
+\[
+ h_m\le\bar h_m\le h_m+\frac{2\log2}{m}.
+\]
+In particular both strip limits converge to $h$ as $m\to\infty$.
+\end{corollary}
+\begin{proof}
+For either the grid or cylinder of fixed width $m$, concatenating two
+dominating sets gives an injection, so its logarithmic count $a_n$ is
+superadditive. To see convergence directly, fix $b$, write $n=qb+r$
+with $0\le r<b$, and fill the last $r$ columns. Then $a_n\ge q a_b$.
+Since $0\le a_n\le mn\log2$, this proves
+$\lim a_n/n=\sup_b a_b/b$. Letting $n\to\infty$ in
+\eqref{eq:error} gives the first estimate; taking the same limit in
+\eqref{eq:rate} gives the second. For the torus use
+$c_{m,n}\le t_{m,n}\le4^m c_{m,n}$: the logarithmic discrepancy per
+vertex is at most $2\log2/n$. These facts reprove the strip conclusions
+in Mertens (17) and on p.~19, and give an explicit error bound.
+\end{proof}
+
+\section{Positive activities and the king graph}
+For $z>0$, let $Z_H(z)=\sum_{S\text{ dominates }H}z^{|S|}$ and set
+$\kappa_z=1+z^{-1}$. The preceding repair injection gives the weighted
+bound
+\begin{equation}\label{eq:weighted-repair}
+ Z_H(z)\le\kappa_z^{|B|} Z_G(z).
+\end{equation}
+Indeed, with $T=S\cup B$ and $U=S\cap B$,
+$z^{|S|}=z^{|T|}z^{|U|-|B|}$. Summing over the image of the injection,
+and then over all pairs $(T,U)$, multiplies $Z_G(z)$ by
+$z^{-|B|}(1+z)^{|B|}=\kappa_z^{|B|}$.
+
+\begin{corollary}\label{cor:weighted}
+Fix $z>0$ and either the Cartesian grid family or the king graph family
+$P_m\boxtimes P_n$. Within the chosen family, the free rectangles,
+their one-direction periodic versions, and their two-direction periodic
+versions have a common joint logarithmic rate $h(z)$, depending on the
+family. The king adjacency
+means that distinct vertices differ by at most one in each coordinate;
+periodic versions use the corresponding cyclic coordinate distance.
+If $F_{a,b}(z)=\log Z_{a,b}(z)/(ab)$ for free rectangles, then
+\begin{equation}\label{eq:weighted-error}
+ h(z)=\sup_{a,b\ge1}F_{a,b}(z),\qquad
+ 0\le h(z)-F_{a,b}(z)
+ \le 2\log\kappa_z\left(\frac1a+\frac1b\right).
+\end{equation}
+The finite periodic/free ratios are at most $\kappa_z^{2n}$ for one
+seam and $\kappa_z^{2(m+n)}$ for two seams.
+\end{corollary}
+\begin{proof}
+Put $A=MN$, $k=\lfloor M/a\rfloor\lfloor N/b\rfloor$ and
+$\theta=kab/A$. Block choices and the selected leftover vertices give
+\[
+ Z_{M,N}(z)\ge Z_{a,b}(z)^k z^{A-kab},\qquad
+ F_{M,N}(z)\ge\theta F_{a,b}(z)+(1-\theta)\log z.
+\]
+The bounds $z^A\le Z_{M,N}(z)\le(1+z)^A$ ensure that the supremum
+of all $F_{a,b}(z)$ is finite. As $M,N\to\infty$, $\theta\to1$;
+the same supremum argument as before proves the joint free limit.
+For an exact tiling, every deleted Cartesian or diagonal king edge has
+both endpoints in the two rows or columns adjacent to a cut.
+Apply \eqref{eq:weighted-repair} to those vertices and let the numbers
+of blocks tend to infinity. This gives \eqref{eq:weighted-error}.
+All extra periodic edges likewise have both endpoints in the seam
+columns or rows, so the same repair gives the stated ratios and common
+limits. Periodic dimensions are at least three. The block and repair
+arguments use only the stated adjacencies, so they apply to both families.
+\end{proof}
+
+At $z=1$ this includes existence and finite-rectangle enclosures for the
+king-graph rate mentioned after Mertens (17). It does not certify the ten
+decimal digits conjectured after (24), or the power-series extrapolation
+assumed in (20). In particular the $O(1/m)$ strip bound establishes a rate
+bound, not a limiting first-order coefficient as suggested in (19).
+
+\section{Coverage and mathematical evidence}
+The common torus--cylinder constant is already described by Mertens
+\cite[p.~19]{mertens} using transfer matrices. Corollary~\ref{cor:torus}
+provides a direct finite-size comparison. Table~\ref{tab:coverage} records
+the nearby statements in the same source.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{@{}p{.43\linewidth}p{.51\linewidth}@{}}
+\toprule
+Source item in Mertens (2024) & Coverage\\
+\midrule
+Section 5, (15)--(17): grid growth & Reproved; prior proof Gangloff--Talon
+(2019/2020), Theorem 1; also Mertens (2024).\\[3pt]
+Section 5, (17), and following sentence: strip limits and king growth &
+Reproved; prior statement Mertens (2024). Corollaries~\ref{cor:strip}
+and \ref{cor:weighted} give quantitative extensions.\\[3pt]
+Section 5, p.~19, after (22): grid--cylinder equality & Reproved;
+consequence of prior results of Gangloff--Talon (2019/2020).
+Theorem~\ref{thm:main} and \eqref{eq:seam} give a same-size bound.\\[3pt]
+Section 5, p.~19: torus--cylinder equality & Reproved; prior proof
+Mertens (2024). Corollaries~\ref{cor:torus} and \ref{cor:strip}
+give finite, joint, and strip bounds.\\[3pt]
+Section 5, (18)--(22): ratio convergence, first-order behavior,
+series and numerical estimates & Not covered as stated; the weaker
+$O(1/m)$ strip error is proved.\\[3pt]
+Section 5, after (24): ten digits for king graphs & Not covered;
+the king-graph numerical conjecture is separate.\\[3pt]
+Section 4 and Appendix B: exact polynomials and minimum-set counts;
+Appendix A: signature counts & Not covered in general. The accompanying
+finite checks include small domination polynomials.\\[3pt]
+Positive-activity and periodic king extensions & Not posed; proved in
+Corollary~\ref{cor:weighted}.\\[3pt]
+OEIS A218354 and A218663: empirical fixed-width recurrences & Not covered;
+strip growth existence does not identify those recurrences.\\
+\bottomrule
+\end{tabular}
+\caption{Statements near the posing paragraph and their scope.}
+\label{tab:coverage}
+\end{table}
+
+The pinned Lean file
+\href{https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean}{\texttt{MertensGridGrowth.lean}}
+contains declarations \texttt{finite\_seam\_bound}, \texttt{tiling\_count},
+and \texttt{result}, respectively for \eqref{eq:seam} with $m\ge3$,
+\eqref{eq:block}, and the unrestricted joint grid--cylinder conclusion.
+The same revision's
+\href{https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/DominatingSetAverage.lean}{\texttt{DominatingSetAverage.lean}}
+defines \texttt{domSets} as all ordinary dominating subsets, supplying
+the counting definition used by those declarations.
+The entropy, torus, strip, positive-activity, and king-graph extensions
+are written proofs. The accompanying \texttt{verify.py} independently
+enumerates dominating subsets on small grids, cylinders, tori, and king
+graphs, checks repair injections, and tests weighted block and cut
+inequalities at $z=1/2,1,2$ using exact rational arithmetic. Its range is
+$1\le m,n\le6$ and $mn\le16$, with periodic dimensions at least three.
+These finite checks concern the combinatorial constructions; the all-size
+limits follow from the proofs above.
+
+\begin{thebibliography}{3}
+\bibitem{gangloff}
+S.~Gangloff and A.~Talon, Asymptotic growth rate of square grids dominating
+sets: a symbolic dynamics approach, \emph{Theoretical Computer Science}
+\textbf{821} (2020), 87--101.
+\href{https://doi.org/10.1016/j.tcs.2020.03.006}{doi:10.1016/j.tcs.2020.03.006}.
+First released 25 June 2019 as
+\href{https://arxiv.org/abs/1906.10779}{arXiv:1906.10779}.
+\bibitem{talon}
+A.~Talon, \emph{Intensive use of computing resources for dominations in
+grids and other combinatorial problems}, doctoral thesis, Universit\'e
+de Lyon, 2019. Public preprint released 26 February 2020:
+\href{https://arxiv.org/abs/2002.11615}{arXiv:2002.11615}.
+\bibitem{mertens}
+S.~Mertens, Domination polynomials of the grid, the cylinder, the torus,
+and the king graph, \emph{Journal of Integer Sequences} \textbf{27}
+(2024), Article 24.7.6.
+\href{https://cs.uwaterloo.ca/journals/JIS/VOL27/Mertens2/mertens12.pdf}{Full text}.
+\end{thebibliography}
+
+\noindent\small\textcopyright\ 2026 Haobo Ma and Wenlin Zhang.
+Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+\end{document}

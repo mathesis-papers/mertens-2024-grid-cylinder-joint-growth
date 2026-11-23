@@ -1,0 +1,277 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:mertens-2024-grid-cylinder-joint-growth:3:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "e277c80d045570daf43bd03b4e313f7ce457b4e2",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean"
+      },
+      "lineage": "collected:mertens-2024-grid-cylinder-joint-growth:s1",
+      "macros": {
+        "\\ds": "\\operatorname{d}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "mertens-2024-grid-cylinder-joint-growth",
+      "scope": "in_scope",
+      "statement": "There is a number $\\mu\\in[1,2]$ such that\n\\[\n \\lim_{m,n\\to\\infty}g_{m,n}^{1/(mn)}\n =\\lim_{m,n\\to\\infty}c_{m,n}^{1/(mn)}=\\mu.\n\\]\nThese are unrestricted joint limits: for every $\\varepsilon>0$ there is\n$N\\ge3$ such that both expressions differ from $\\mu$ by less than\n$\\varepsilon$ whenever $m,n\\ge N$. Moreover,\n\\begin{equation}\n g_{m,n}\\le c_{m,n}\\le4^n g_{m,n}\n \\qquad(m\\ge3,\\ n\\ge1).\n\\end{equation}",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Boundary bounds for Mertens's grid–cylinder conjecture: an alternative proof and extensions",
+      "toolchain": null,
+      "version": 3,
+      "work": "mertens-2024-grid-cylinder-joint-growth"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:mertens-2024-grid-cylinder-joint-growth:3:s2",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "e277c80d045570daf43bd03b4e313f7ce457b4e2",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean"
+      },
+      "lineage": "collected:mertens-2024-grid-cylinder-joint-growth:s2",
+      "macros": {
+        "\\ds": "\\operatorname{d}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "mertens-2024-grid-cylinder-joint-growth",
+      "scope": "in_scope",
+      "statement": "Let $G,H$ be graphs on the same finite vertex set $V$. Suppose $B\\subseteq V$\nhas the property that every $H$-edge incident to a vertex outside $B$\nis a $G$-edge. Then\n\\[\n \\ds(H)\\le 2^{|B|}\\ds(G).\n\\]",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Boundary bounds for Mertens's grid–cylinder conjecture: an alternative proof and extensions",
+      "toolchain": null,
+      "version": 3,
+      "work": "mertens-2024-grid-cylinder-joint-growth"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:mertens-2024-grid-cylinder-joint-growth:3:s3",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "e277c80d045570daf43bd03b4e313f7ce457b4e2",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean"
+      },
+      "lineage": "collected:mertens-2024-grid-cylinder-joint-growth:s3",
+      "macros": {
+        "\\ds": "\\operatorname{d}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "mertens-2024-grid-cylinder-joint-growth",
+      "scope": "in_scope",
+      "statement": "For all positive integers $a,b,M,N$,\n\\begin{equation}\n g_{M,N}\\ge g_{a,b}^{\\lfloor M/a\\rfloor\\lfloor N/b\\rfloor}.\n\\end{equation}",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Boundary bounds for Mertens's grid–cylinder conjecture: an alternative proof and extensions",
+      "toolchain": null,
+      "version": 3,
+      "work": "mertens-2024-grid-cylinder-joint-growth"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:mertens-2024-grid-cylinder-joint-growth:3:s4",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "e277c80d045570daf43bd03b4e313f7ce457b4e2",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean"
+      },
+      "lineage": "collected:mertens-2024-grid-cylinder-joint-growth:s4",
+      "macros": {
+        "\\ds": "\\operatorname{d}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "mertens-2024-grid-cylinder-joint-growth",
+      "scope": "in_scope",
+      "statement": "Every positive rectangle gives the rigorous enclosure\n\\begin{equation}\n 0\\le h-f_{a,b}\\le2\\log2\\left(\\frac1a+\\frac1b\\right).\n\\end{equation}",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Boundary bounds for Mertens's grid–cylinder conjecture: an alternative proof and extensions",
+      "toolchain": null,
+      "version": 3,
+      "work": "mertens-2024-grid-cylinder-joint-growth"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:mertens-2024-grid-cylinder-joint-growth:3:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "e277c80d045570daf43bd03b4e313f7ce457b4e2",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean"
+      },
+      "lineage": "collected:mertens-2024-grid-cylinder-joint-growth:s5",
+      "macros": {
+        "\\ds": "\\operatorname{d}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "mertens-2024-grid-cylinder-joint-growth",
+      "scope": "in_scope",
+      "statement": "For $m,n\\ge3$, put $t_{m,n}=\\ds(C_m\\mathbin\\square C_n)$. Then\n\\[\n g_{m,n}\\le c_{m,n}\\le t_{m,n}\\le4^m c_{m,n}\n \\le4^{m+n}g_{m,n},\\qquad\n \\lim_{m,n\\to\\infty}t_{m,n}^{1/(mn)}=\\mu.\n\\]",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Boundary bounds for Mertens's grid–cylinder conjecture: an alternative proof and extensions",
+      "toolchain": null,
+      "version": 3,
+      "work": "mertens-2024-grid-cylinder-joint-growth"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s6",
+      "contributor": null,
+      "identity": "collected:mertens-2024-grid-cylinder-joint-growth:3:s6",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "e277c80d045570daf43bd03b4e313f7ce457b4e2",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean"
+      },
+      "lineage": "collected:mertens-2024-grid-cylinder-joint-growth:s6",
+      "macros": {
+        "\\ds": "\\operatorname{d}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "mertens-2024-grid-cylinder-joint-growth",
+      "scope": "in_scope",
+      "statement": "For each fixed $m\\ge1$, the limit\n$h_m=\\lim_{n\\to\\infty}\\log g_{m,n}/(mn)$ exists and\n\\[\n 0\\le h-h_m\\le \\frac{2\\log2}{m}.\n\\]\nFor $m\\ge3$ the cylinder strip limit $\\bar h_m$ exists, the torus\nhas the same strip limit, and\n\\[\n h_m\\le\\bar h_m\\le h_m+\\frac{2\\log2}{m}.\n\\]\nIn particular both strip limits converge to $h$ as $m\\to\\infty$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Boundary bounds for Mertens's grid–cylinder conjecture: an alternative proof and extensions",
+      "toolchain": null,
+      "version": 3,
+      "work": "mertens-2024-grid-cylinder-joint-growth"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s7",
+      "contributor": null,
+      "identity": "collected:mertens-2024-grid-cylinder-joint-growth:3:s7",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "e277c80d045570daf43bd03b4e313f7ce457b4e2",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean"
+      },
+      "lineage": "collected:mertens-2024-grid-cylinder-joint-growth:s7",
+      "macros": {
+        "\\ds": "\\operatorname{d}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "mertens-2024-grid-cylinder-joint-growth",
+      "scope": "in_scope",
+      "statement": "Fix $z>0$ and either the Cartesian grid family or the king graph family\n$P_m\\boxtimes P_n$. Within the chosen family, the free rectangles,\ntheir one-direction periodic versions, and their two-direction periodic\nversions have a common joint logarithmic rate $h(z)$, depending on the\nfamily. The king adjacency\nmeans that distinct vertices differ by at most one in each coordinate;\nperiodic versions use the corresponding cyclic coordinate distance.\nIf $F_{a,b}(z)=\\log Z_{a,b}(z)/(ab)$ for free rectangles, then\n\\begin{equation}\n h(z)=\\sup_{a,b\\ge1}F_{a,b}(z),\\qquad\n 0\\le h(z)-F_{a,b}(z)\n \\le 2\\log\\kappa_z\\left(\\frac1a+\\frac1b\\right).\n\\end{equation}\nThe finite periodic/free ratios are at most $\\kappa_z^{2n}$ for one\nseam and $\\kappa_z^{2(m+n)}$ for two seams.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Boundary bounds for Mertens's grid–cylinder conjecture: an alternative proof and extensions",
+      "toolchain": null,
+      "version": 3,
+      "work": "mertens-2024-grid-cylinder-joint-growth"
+    }
+  ]
+}
