@@ -5,13 +5,15 @@
 We give a finite-boundary alternative proof of Mertens's grid–cylinder growth equality (2024, Section 5, page 19, after equation (22)), which already follows from Gangloff and Talon's grid results (2019/2020). The per-vertex counts have the same unrestricted joint limit as both side lengths tend to infinity. An injective boundary repair gives g(m,n) <= c(m,n) <= 4^n g(m,n). Block arguments yield explicit rectangle and strip bounds, and the comparison extends to every positive activity and to king graphs with periodic boundaries.
 
 - PDF: [frozen public file](paper.pdf)
+- DOI: [https://doi.org/10.5281/zenodo.24409065](https://doi.org/10.5281/zenodo.24409065)
+- Concept DOI: [https://doi.org/10.5281/zenodo.24409064](https://doi.org/10.5281/zenodo.24409064)
 - License: CC-BY-4.0
 - Version: 3
 - Mathesis record: [mertens-2024-grid-cylinder-joint-growth](https://mathesis-omega-research.apps.chrono-ai.fun/papers/mertens-2024-grid-cylinder-joint-growth?version=3)
 
 ## How to cite
 
-Haobo Ma, Wenlin Zhang (2026). Boundary bounds for Mertens's grid–cylinder conjecture: an alternative proof and extensions. Mathesis, version 3. https://mathesis-omega-research.apps.chrono-ai.fun/papers/mertens-2024-grid-cylinder-joint-growth?version=3
+Haobo Ma, Wenlin Zhang (2026). Boundary bounds for Mertens's grid–cylinder conjecture: an alternative proof and extensions. Mathesis, version 3. https://doi.org/10.5281/zenodo.24409065
 
 ## Statement progress
 
