@@ -31,6 +31,7 @@
     "concept_doi": "10.5281/zenodo.24409064",
     "current_version": 3,
     "doi": "10.5281/zenodo.24409065",
+    "kind": "note",
     "lean_source": {
       "revision": "e277c80d045570daf43bd03b4e313f7ce457b4e2",
       "url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S3/Combinatorics/Graph/Domination/MertensGridGrowth.lean"
@@ -55,10 +56,12 @@
     "title": "Boundary bounds for Mertens's grid–cylinder conjecture: an alternative proof and extensions",
     "versions": [
       {
+        "changelog": null,
         "previous_version": null,
         "published_on": "2026-11-23T01:42:22.714777139Z",
         "revision": "3",
-        "version": 3
+        "version": 3,
+        "version_label": null
       }
     ],
     "work": "mertens-2024-grid-cylinder-joint-growth"
